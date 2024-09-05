@@ -71,7 +71,8 @@ Here is the folder structure of the repository:
 │   ├── road.yaml
 │   └── syncan.yaml
 ├── datasets
-│   └── can-ids
+│   └── road
+│   └── syncan
 ├── dependency
 │   ├── environment.yaml
 │   └── requirements.txt
@@ -182,12 +183,12 @@ python run_feature_analysis.py --config-name <dataset_name>
   
   ```python
   python run_feature_extraction.py --config-name syncan -m data_type=training,testing fraction=0.10
-  python run_feature_analysis.py fraction=0.10
+  python run_feature_analysis.py --config-name syncan fraction=0.10
   ```
 
     ```python
   python run_feature_extraction.py --config-name road -m data_type=training,testing fraction=0.10
-  python run_feature_analysis.py fraction=0.10
+  python run_feature_analysis.py --config-name road fraction=0.10
   ```
   
 ### Visualization and Results

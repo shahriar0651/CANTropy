@@ -22,16 +22,16 @@ chmod +x Mambaforge-$(uname)-$(uname -m).sh
 ```
 #### Create Environment
 ```
-mamba env create --file dependency/environment.yaml
+conda env create --file dependency/environment.yaml
 ```
 Or update the existing env
 ```
-mamba env update --file dependency/environment.yaml --prune
+conda env update --file dependency/environment.yaml --prune
 ```
 
 #### Activate Environment
 ```
-mamba activate cantropy
+conda activate cantropy
 ```
 
 ## Download Dataset

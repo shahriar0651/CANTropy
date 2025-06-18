@@ -1,4 +1,4 @@
-# cantropy
+# CANtropy
 CANtropy: Time Series Feature Extraction-Based Intrusion Detection Systems for Controller Area Networks
 
 This repository provides the python implementation of CANtropy, a manual feature engineering-based lightweight CAN IDS. For each signal, CANtropy explores a comprehensive set of features from both temporal and statistical domains and selects only the effective subset of features in the detection pipeline to ensure scalability. Later, CANtropy uses a lightweight unsupervised anomaly detection model based on principal component analysis, to learn the mutual dependencies of the features and detect abnormal patterns in the sequence of CAN messages. The evaluation results on the advanced SynCAN dataset show that CANtropy provides a comprehensive defense against diverse types of cyberattacks.
@@ -6,11 +6,11 @@ This repository provides the python implementation of CANtropy, a manual feature
 ![CANtropy Workflow](doc/cantropy_workflow.jpg)
 
 
-## Clone cantropy
+## Clone CANtropy
 
 ```
-git clone https://github.com/shahriar0651/cantropy.git
-cd cantropy
+git clone https://github.com/shahriar0651/CANtropy.git
+cd CANtropy
 ```
 
 ## Install Mambaforge
@@ -59,7 +59,7 @@ ln -s <directory_to_road_dataset>/ datasets/
 
 For example, if `/home/workspace/can-ids-datasets/` folder contains the SynCAN and ROAD dataset, you can follow:
 ```
-cd cantropy
+cd CANtropy
 ln -s /home/workspace/can-ids-datasets/syncan datasets
 ln -s /home/workspace/can-ids-datasets/road datasets
 ```
@@ -151,7 +151,7 @@ Here is the detailed tree structure of the datasets folder (after you download b
             ├── License terms.txt
             └── README.md
 ```
-## Implementing cantropy
+## Implementing CANtropy
 
 #### Feature Extraction
 ```python
